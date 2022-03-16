@@ -241,7 +241,7 @@
                                 data-paddingbottom="[12,12,12,12]"
                                 data-paddingleft="[20,20,20,20]"
                             >
-                                <a href="#section-register" class="btn-custom text-white scroll-to">Register</a>
+                                <a href="#section-about" class="btn-custom text-white scroll-to">About</a>
                             </div>
 							
 							<div
@@ -282,6 +282,37 @@
 					</div>
 				</div>
 			</section>
+            
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Apr 20, 2022 10:00:00").getTime();
+                
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+                
+                  // Get today's date and time
+                  var now = new Date().getTime();
+                    
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+                    
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  // Output the result in an element with id="demo"
+                  document.getElementById("defaultCountdown").innerHTML = days + "D " + hours + "H "
+                  + minutes + "M " + seconds + "S ";
+                    
+                  // If the count down is over, write some text 
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("defaultCountdown").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+            </script>
 			
 			<!-- section begin -->
 			<section id="section-about" data-bgimage="url(images-event/bg/1.png) fixed no-repeat">
@@ -332,17 +363,17 @@
 									<img src="images-event/team/1.jpg" class="img-responsive" alt="" />
 								</div>
 								<div class="team-desc">
-									<h3>Robotics</h3>
-									<p class="lead">Expert Designer</p>
+									<h3>Robotics :</h3>
 									<div class="small-border"></div>
-									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-
-									<div class="social">
-										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
-									</div>
+									<p>
+                                        <ul>
+                                            <li>Robo Race</li>
+                                            <li>Robo Soccer</li>
+                                            <li>Light Follower</li>
+                                            <li>Line Follower</li>
+                                            <li>Mini Robo War</li>
+                                        </ul>
+                                    </p>
 								</div>
 							</div>
 							<!-- team close -->
@@ -355,17 +386,21 @@
 									<img src="images-event/team/2.jpg" class="img-responsive" alt="" />
 								</div>
 								<div class="team-desc">
-									<h3>Michael Dennis</h3>
-									<p class="lead">Expert Designer</p>
+									<h3>Coding Events :</h3>
+									<!--<p class="lead">Expert Designer</p>-->
 									<div class="small-border"></div>
-									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-
-									<div class="social">
+									<p>
+                                        <ul>
+                                            <li>Coding Hackathon (Code Golf)</li>
+                                            <li>Web Development (Frontend)</li>
+                                        </ul>
+                                    </p>
+									<!--<div class="social">
 										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
 										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
 										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
 										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
-									</div>
+									</div>-->
 								</div>
 							</div>
 							<!-- team close -->
@@ -378,17 +413,15 @@
 									<img src="images-event/team/3.jpg" class="img-responsive" alt="" />
 								</div>
 								<div class="team-desc">
-									<h3>Sarah Michelle</h3>
-									<p class="lead">Expert Designer</p>
+									<h3>Games :</h3>
 									<div class="small-border"></div>
-									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-
-									<div class="social">
-										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
-									</div>
+									<p>
+                                        <ul>
+                                            <li>Counter Strike</li>
+                                            <li>NFS(Most Wanted)</li>
+                                            <li>Tekken</li>
+                                        </ul>
+                                    </p>
 								</div>
 							</div>
 							<!-- team close -->
@@ -401,17 +434,16 @@
 									<img src="images-event/team/4.jpg" class="img-responsive" alt="" />
 								</div>
 								<div class="team-desc">
-									<h3>Katty Wilson</h3>
-									<p class="lead">Expert Designer</p>
+									<h3>Presentation & Quizes</h3>
 									<div class="small-border"></div>
-									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-
-									<div class="social">
-										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
-									</div>
+									<p>
+                                        <ul>
+                                            <li>Tech Presentation (TechToday/TechWar)</li>
+                                            <li>Technical Quiz</li>
+                                            <li>Cognitive Quiz</li>
+                                            <li>Social Quiz</li>
+                                        </ul>
+                                    </p>
 								</div>
 							</div>
 							<!-- team close -->
@@ -934,7 +966,7 @@
 			
 			<!-- section begin -->
             <section id="section-register">
-                <div class="wm wm-border dark wow fadeInDown">register</div>
+                <div class="wm wm-border dark wow fadeInDown">Register</div>
 				<div class="container">
                     <div class="row">
 						<div class="col-md-6 offset-md-3 text-center wow fadeInUp">
