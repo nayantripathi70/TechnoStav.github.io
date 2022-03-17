@@ -7689,3 +7689,8 @@ display:table;
 		display:none;
 	}
 	}
+	}
+	.responsive-iframe {
+		width: 100%;
+}
+
