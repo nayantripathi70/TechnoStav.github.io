@@ -101,9 +101,8 @@
 								<li><a href="#section-hero">Home<span></span></a></li>
 								<li><a href="#section-about">About<span></span></a></li>
 								<li><a href="#section-events">Events<span></span></a></li>
-								<li><a href="#section-schedule">Schedule<span></span></a></li>
-								<li><a href="#section-sponsors">Sponsors<span></span></a></li>
-								<li><a href="#section-register">Register<span></span></a></li>
+								<li><a href="">Campus Ambassador<span></span></a></li>
+                                <li><a href="#section-register">Register<span></span></a></li>
                                 <li><a href="#section-contact">Contact Us<span></span></a></li>
 							</ul>
 							<!-- mainmenu close -->
@@ -272,52 +271,9 @@
             </section>
             <!-- revolution slider close -->
 			
-			<section id="section-countdown" aria-label="section" class="gradient-to-right pt40 pb40">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-10 offset-md-1">
-							<div class="spacer-single"></div>
-							<div id="defaultCountdown"></div>
-						</div>
-					</div>
-				</div>
-			</section>
-            
-            <script>
-                // Set the date we're counting down to
-                var countDownDate = new Date("Apr 18, 2022 10:00:00").getTime();
-                
-                // Update the count down every 1 second
-                var x = setInterval(function() {
-                
-                  // Get today's date and time
-                  var now = new Date().getTime();
-                    
-                  // Find the distance between now and the count down date
-                  var distance = countDownDate - now;
-                    
-                  // Time calculations for days, hours, minutes and seconds
-                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                    
-                  // Output the result in an element with id="demo"
-                  document.getElementById("defaultCountdown").innerHTML = days + "D " + hours + "H "
-                  + minutes + "M " + seconds + "S ";
-                    
-                  // If the count down is over, write some text 
-                  if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("defaultCountdown").innerHTML = "EXPIRED";
-                  }
-                }, 1000);
-            </script>
-			
 			<!-- section begin -->
 			<section id="section-about" data-bgimage="url(images-event/bg/1.png) fixed no-repeat">
-				<div class="wm wm-border dark wow fadeInDown">welcome</div>
-                    <div class="container">
+				<div class="container">
                         <div class="row align-items-center">
                             
                             <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
@@ -345,8 +301,7 @@
 				
 			<!-- section begin -->
             <section id="section-events" class="text-light" data-bgimage="url(images-event/bg/1.jpg) fixed top center" data-stellar-background-ratio=".2">
-				<div class="wm wm-border dark wow fadeInDown">Events</div>
-                <div class="container">
+				<div class="container">
                     <div class="row">
 						<div class="col-md-6 offset-md-3 text-center wow fadeInUp">
                             <h1>Events</h1>
@@ -363,7 +318,7 @@
 									<img src="images-event/team/1.jpg" class="img-responsive" alt="" />
 								</div>
 								<div class="team-desc">
-									<a href="robotics.html"><h3>Robotics :</h3></a>
+									<h3>Robotics :</h3>
 									<div class="small-border"></div>
 									<p>
                                         <ul>
@@ -386,8 +341,7 @@
 									<img src="images-event/team/2.jpg" class="img-responsive" alt="" />
 								</div>
 								<div class="team-desc">
-									<a href="Coding.html"><h3>Coding Events :</h3></a>
-									<!--<p class="lead">Expert Designer</p>-->
+									<h3>Coding Events :</h3>
 									<div class="small-border"></div>
 									<p>
                                         <ul>
@@ -395,12 +349,7 @@
                                             <li>Web Development (Frontend)</li>
                                         </ul>
                                     </p>
-									<!--<div class="social">
-										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
-									</div>-->
+									
 								</div>
 							</div>
 							<!-- team close -->
@@ -413,7 +362,7 @@
 									<img src="images-event/team/3.jpg" class="img-responsive" alt="" />
 								</div>
 								<div class="team-desc">
-									<a href="Games.html"><h3>Games :</h3></a>
+									<h3>Games :</h3>
 									<div class="small-border"></div>
 									<p>
                                         <ul>
@@ -434,7 +383,7 @@
 									<img src="images-event/team/4.jpg" class="img-responsive" alt="" />
 								</div>
 								<div class="team-desc">
-									<h3><a href="Presentation.html">Presentation &</a><a href="Quiz.html"> Quizes</a></h3>
+									<h3>Presentation & Quizes</h3>
 									<div class="small-border"></div>
 									<p>
                                         <ul>
@@ -459,7 +408,6 @@
 			
 			<!-- section begin -->
             <section id="section-schedule" aria-label="section-services-tab" data-bgimage="url(images-event/bg/2.png) fixed center no-repeat">
-                <div class="wm wm-border dark wow fadeInDown ">schedule</div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
@@ -483,14 +431,7 @@
                                         <h3>Day <span>03</span></h3>
                                         <h4>April 20, 2022</h4>
                                     </li>
-                                    <li data-link="#section-services-tab">
-                                        <h3>Day <span>04</span></h3>
-                                        <h4>April 21, 2022</h4>
-                                    </li>
-                                    <li data-link="#section-services-tab">
-                                        <h3>Day <span>05</span></h3>
-                                        <h4>April 22, 2022</h4>
-                                    </li>
+                                    
                                 </ul>
 
                                 <div class="de_tab_content text-left">
@@ -500,21 +441,97 @@
                                             <div class="col-md-12">
                                                 <div class="schedule-listing">
                                                     <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 10:00 AM</div>
+                                                        <div class="sc-time">09:00 - 10:30 AM</div>
                                                         <div class="sc-pic">
                                                             <img src="images-event/team/1.jpg" class="img-circle" alt="">
                                                         </div>
                                                         <div class="sc-name">
-                                                            <h4>John Smith</h4>
-                                                            <span>Founder & CEO</span>
+                                                            <h4>Robotics</h4>
                                                         </div>
                                                         <div class="sc-info">
-                                                            <h3>Introduction Creative Design</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                            <h3>Robo Marathon (Robo Race)</h3>
+                                                            <p>A Robotics event in which the participants have to race their robots through a hurdled race tracks in least time, Team strength: upto 4 members, Duration: 30 min.</p>
                                                         </div>
                                                         <div class="clearfix"></div>
                                                     </div>
                                                 </div>
+
+                                                <div class="schedule-listing">
+                                                    <div class="schedule-item">
+                                                        <div class="sc-time">11:00 - 12:30 PM</div>
+                                                        <div class="sc-pic">
+                                                            <img src="images-event/team/1.jpg" class="img-circle" alt="">
+                                                        </div>
+                                                        <div class="sc-name">
+                                                            <h4>Robotics</h4>
+                                                        </div>
+                                                        <div class="sc-info">
+                                                            <h3>Smash Clan (Robo Soccer)</h3>
+                                                            <p>A robotics event in which the participants have to play soccer with their robo and the participants with maximum goals in limited time wins, Team strength: Up to 4 members, Duration: 30 min.</p>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="schedule-listing">
+                                                    <div class="schedule-item">
+                                                        <div class="sc-time">12:00 - 01:30 PM</div>
+                                                        <div class="sc-pic">
+                                                            <img src="images-event/team/1.jpg" class="img-circle" alt="">
+                                                        </div>
+                                                        <div class="sc-name">
+                                                            <h4>Robotics</h4>
+                                                            
+                                                        </div>
+                                                        <div class="sc-info">
+                                                            <h3>Blaziast (Light Follower)</h3>
+                                                            <p>A robotics events in which the participants have to build an autonomous bot that follows the given light in least time, Team strength: Up to 4 members, Duration: 30 min.</p>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="schedule-listing">
+                                                    <div class="schedule-item">
+                                                        <div class="sc-time">01:00 - 02:30 PM</div>
+                                                        <div class="sc-pic">
+                                                            <img src="images-event/team/1.jpg" class="img-circle" alt="">
+                                                        </div>
+                                                        <div class="sc-name">
+                                                            <h4>Robotics</h4>
+                                                            
+                                                        </div>
+                                                        <div class="sc-info">
+                                                            <h3>Line Creeper (Line Follower)</h3>
+                                                            <p>A robotics events in which the participants have to build an autonomous bot that follows the given path in least time, without deviating from the line, Team strength: Up to 4 members, Duration: 30 mins.</p>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-listing">
+                                                    <div class="schedule-item">
+                                                        <div class="sc-time">02:00 - 03:30 PM</div>
+                                                        <div class="sc-pic">
+                                                            <img src="images-event/team/1.jpg" class="img-circle" alt="">
+                                                        </div>
+                                                        <div class="sc-name">
+                                                            <h4>Robotics</h4>
+                                                            
+                                                        </div>
+                                                        <div class="sc-info">
+                                                            <h3>MiniTron (The Mini war)</h3>
+                                                            <p>A robotics events in which the participants have to build a manually controlled machine capable of knocking out the opponents bot in a one on one competition, Team strength: Up to 4 members, Duration: 30 mins.</p>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="tab2" class="tab_single_content dark">
+                                        <div class="row">
+                                            <div class="col-md-12">
 
                                                 <div class="schedule-listing">
                                                     <div class="schedule-item">
@@ -523,12 +540,12 @@
                                                             <img src="images-event/team/2.jpg" class="img-circle" alt="">
                                                         </div>
                                                         <div class="sc-name">
-                                                            <h4>Michael Dennis</h4>
-                                                            <span>Founder & CEO</span>
+                                                            <h4>Coding</h4>
+                                                            
                                                         </div>
                                                         <div class="sc-info">
-                                                            <h3>Getting Started With Creative Design</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                            <h3>Code Golf (Coding Hackathon)</h3>
+                                                            <p>A coding competition comprising of two stages with no language barrier. Stage 1 will take place through an online platform and stage 2 will be completing an incomplete code, Team strength: Up to 2 members.</p>
                                                         </div>
                                                         <div class="clearfix"></div>
                                                     </div>
@@ -538,15 +555,16 @@
                                                     <div class="schedule-item">
                                                         <div class="sc-time">16:00 - 18:00 PM</div>
                                                         <div class="sc-pic">
-                                                            <img src="images-event/team/3.jpg" class="img-circle" alt="">
+                                                            <img src="images-event/team/2.jpg" class="img-circle" alt="">
                                                         </div>
                                                         <div class="sc-name">
-                                                            <h4>Sarah Michelle</h4>
-                                                            <span>Founder & CEO</span>
+                                                            <h4>Coding</h4>
+                                                            
                                                         </div>
                                                         <div class="sc-info">
-                                                            <h3>Prepare Your Design Concept</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                            <h3>Spin-a-Web [Web Development (Frontend)]</h3>
+                                                            <p>A coding events in which the participants have to build the frontend 
+                                                                for a website on a given topic assigned 48 hours prior to the event.</p>
                                                         </div>
                                                         <div class="clearfix"></div>
                                                     </div>
@@ -559,90 +577,13 @@
                                                             <img src="images-event/team/4.jpg" class="img-circle" alt="">
                                                         </div>
                                                         <div class="sc-name">
-                                                            <h4>Katty Wilson</h4>
-                                                            <span>Founder & CEO</span>
+                                                            <h4>Presentation</h4>
+        
                                                         </div>
                                                         <div class="sc-info">
-                                                            <h3>Creative Design Implementation Basic</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="tab2" class="tab_single_content dark">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/5.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Rose Shipp</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Creative Design Implementation Basic 2</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">12:00 - 14:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/6.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Isaac Nicholas</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>How to Design Happiness</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">16:00 - 18:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/7.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Arnold</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Good Storytelling For Great Design</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">20:00 - 22:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/1.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Smith</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Unintuitive Lessons on Being a Designer</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                            <h3>Tech War (Technology Presentation)</h3>
+                                                            <p>Participants are expected to present a powerpoint presentation in 
+                                                                either for or against the given topic.</p>
                                                         </div>
                                                         <div class="clearfix"></div>
                                                     </div>
@@ -658,15 +599,16 @@
                                                     <div class="schedule-item">
                                                         <div class="sc-time">08:00 - 12:00 AM</div>
                                                         <div class="sc-pic">
-                                                            <img src="images-event/team/2.jpg" class="img-circle" alt="">
+                                                            <img src="images-event/team/3.jpg" class="img-circle" alt="">
                                                         </div>
                                                         <div class="sc-name">
-                                                            <h4>Michael Dennis</h4>
-                                                            <span>Founder & CEO</span>
+                                                            <h4>Games</h4>
+                                                            
                                                         </div>
                                                         <div class="sc-info">
-                                                            <h3>The Secret of Great App Design</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                            <h3>LAN Gaming</h3>
+                                                            <p>The Gamers are invited to show their Gaming skills in top notch game 
+                                                                like NFS, Counter Strike and Tekken.</p>
                                                         </div>
                                                         <div class="clearfix"></div>
                                                     </div>
@@ -676,15 +618,16 @@
                                                     <div class="schedule-item">
                                                         <div class="sc-time">12:00 - 14:00 PM</div>
                                                         <div class="sc-pic">
-                                                            <img src="images-event/team/3.jpg" class="img-circle" alt="">
+                                                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
                                                         </div>
                                                         <div class="sc-name">
-                                                            <h4>Sarah Michelle</h4>
-                                                            <span>Founder & CEO</span>
+                                                            <h4>Quiz</h4>
+                                                            
                                                         </div>
                                                         <div class="sc-info">
-                                                            <h3>Use Design Thinking in Your Everyday Routine</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                            <h3>IT-Ripplest</h3>
+                                                            <p>A Quiz comprising of three stages covering all domains (Cognitive, 
+                                                                Technical & Social).</p>
                                                         </div>
                                                         <div class="clearfix"></div>
                                                     </div>
@@ -697,30 +640,15 @@
                                                             <img src="images-event/team/4.jpg" class="img-circle" alt="">
                                                         </div>
                                                         <div class="sc-name">
-                                                            <h4>Katty Wilson</h4>
-                                                            <span>Founder & CEO</span>
+                                                            <h4>TechnoStav</h4>
+                                                            <span>2k22</span>
                                                         </div>
                                                         <div class="sc-info">
-                                                            <h3>Design Into The Real World</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">20:00 - 22:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/5.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Rose Shipp</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Advanced Design Implementation</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                            <h3>TechnoStav - Tech Expo</h3>
+                                                            <p>Here we are inviting people from every field of engineering to 
+                                                                present their working models & their machines.<br>
+                                                                This is the ideal platform for the budding technocrats and the tech-savvy, providing them an opportunity to gain exposure and interact with various researchers whose global expertise has brought these breathtaking exhibits into existence.
+                                                            </p>
                                                         </div>
                                                         <div class="clearfix"></div>
                                                     </div>
@@ -729,161 +657,10 @@
                                         </div>
                                     </div>
 
-                                    <div id="tab4" class="tab_single_content dark">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/6.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Isaac Nicholas</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Advanced Design Implementation 2</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
+                                    
 
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">12:00 - 14:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/7.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Arnold</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Branding, Identity &amp; Logo Design Explained</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">16:00 - 18:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/1.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Smith</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>The Art of Personal Branding</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">20:00 - 22:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/2.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Michael Dennis</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>8 Secret Benefits of Branding</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="tab5" class="tab_single_content dark">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/1.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Smith</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>How To Brand A Startup On A Small Budget</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/2.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Smith</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Establishing a Brand Identity</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/3.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Sarah Michelle</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Interview With World Class Designer</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Katty Wilson</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Close Event Ceremony &amp; Doorprize</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
@@ -894,7 +671,6 @@
 			
 			<!-- section begin -->
             <section id="section-sponsors" data-bgimage="url(images-event/bg/3.png) fixed center no-repeat">
-                <div class="wm wm-border dark wow fadeInDown ">sponsors</div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
@@ -925,49 +701,8 @@
             <!-- section close -->
 			
 			<!-- section begin -->
-            <section id="section-testimonials" class="text-light" aria-label="section">
-				<div class="wm wm-border dark wow fadeInDown">testimonials</div>
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-8 offset-md-2">
-                            
-							<div id="testimonial-carousel-single" class="owl-carousel owl-theme wow fadeInUp">
-								<blockquote class="testimonial-big">
-									<span class="title">I've got lot experiences!</span>
-									I'm always impressed with the event. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-
-									<span class="name">John, Customer</span>
-								</blockquote>
-								
-								<blockquote class="testimonial-big">
-									<span class="title">Exceeded my expectations!</span>
-									Just wow! I'm always impressed with the event. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-
-									<span class="name">Sandra, Customer</span>
-								</blockquote>
-								
-								<blockquote class="testimonial-big">
-									<span class="title">Better than I think!</span>
-									I'm always impressed with the event. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-
-									<span class="name">Michael, Customer</span>
-								</blockquote>
-							</div>
-							
-                        </div>
-
-                    </div>
-					
-                </div>
-            </section>
-            <!-- section close -->
-			
-			
-			<!-- section begin -->
             <section id="section-register">
-                <div class="wm wm-border dark wow fadeInDown">Register</div>
-				<div class="container">
+                <div class="container">
                     <div class="row">
 						<div class="col-md-6 offset-md-3 text-center wow fadeInUp">
                             <h1>Register Now</h1>
